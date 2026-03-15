@@ -184,8 +184,8 @@ class PDFSettings(BaseModel):
         description="Force translated text to be black and add white background",
     )
     auto_enable_ocr_workaround: bool = Field(
-        default=False,
-        description="Enable automatic OCR workaround. If a document is detected as heavily scanned, this will attempt to enable OCR processing and skip further scan detection. See documentation for details. (default: False)",
+        default=True,
+        description="Enable automatic OCR workaround. If a document is detected as heavily scanned, this will attempt to enable OCR processing and skip further scan detection. See documentation for details. (default: True)",
     )
     only_include_translated_page: bool = Field(
         default=False,
